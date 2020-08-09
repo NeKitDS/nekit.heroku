@@ -1,0 +1,12 @@
+# manim requirements
+# SoX (for sound)
+sox
+# FFmpeg (for generating animations)
+ffmpeg
+# Cairo (for creating animations with code)
+libcairo2
+libcairo2-dev
+# LaTeX (for writing nice formulas and text)
+texlive
+texlive-latex-extra
+texlive-latex-recommended
