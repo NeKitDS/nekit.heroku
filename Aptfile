@@ -8,5 +8,4 @@ libcairo2
 libcairo2-dev
 # LaTeX (for writing nice formulas and text)
 texlive
-texlive-latex-extra
 texlive-latex-recommended
