@@ -4,6 +4,6 @@ Cython>=0.29.20
 -e git+https://github.com/NeKitDS/nekit.site.git#egg=nekit.site
 -e git+https://github.com/NeKitDS/gd.bot.git#egg=gd.bot
 -e git+https://github.com/NeKitDS/gd.graph.git#egg=gd.graph
--e git+https://github.com/3b1b/manim.git#egg=manimlib
+# -e git+https://github.com/3b1b/manim.git#egg=manimlib
 
-opencv-python-headless>=4.3.0.0
+# opencv-python-headless>=4.3.0.0
