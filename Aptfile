@@ -9,3 +9,7 @@ libcairo2-dev
 # LaTeX (for writing nice formulas and text)
 texlive
 texlive-latex-recommended
+# some libraries needed
+libsm6
+libxrender1
+libfontconfig1
