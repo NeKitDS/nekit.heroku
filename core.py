@@ -9,9 +9,6 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 GD_USER = os.getenv("GD_USER")
 GD_PASSWORD = os.getenv("GD_PASSWORD")
 
-# why not?
-gd.factory.load()
-
 # create a loop
 LOOP = gd.utils.acquire_loop()
 
