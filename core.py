@@ -12,6 +12,9 @@ GD_PASSWORD = os.getenv("GD_PASSWORD")
 # create a loop
 LOOP = gd.utils.acquire_loop()
 
+# load the factory
+gd.factory.load()
+
 # attach bot running task
 LOOP.create_task(gdbot.run_bot(BOT_TOKEN, GD_USER, GD_PASSWORD, LOOP))
 
