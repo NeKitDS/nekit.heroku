@@ -1,5 +1,3 @@
-Cython>=0.29.20
-
--e git+https://github.com/nekitdev/gd.py.git#egg=gd.py[image,speedups]
--e git+https://github.com/nekitdev/nekit.site.git#egg=nekit.site
--e git+https://github.com/nekitdev/gd.bot.git#egg=gd.bot
+https://github.com/nekitdev/gd.py/archive/develop.zip#egg=gd.py[image,speedups]
+https://github.com/nekitdev/nekit.site/archive/master.zip#egg=nekit.site
+https://github.com/nekitdev/gd.bot/archive/master.zip#egg=gd.bot
