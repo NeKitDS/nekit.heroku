@@ -1,7 +1,7 @@
 import os
 
 import gd
-import gdbot
+import gd.bot
 import nekit_site
 
 # get credentials
@@ -16,7 +16,7 @@ LOOP = gd.utils.acquire_loop()
 gd.factory.load()
 
 # attach bot running task
-LOOP.create_task(gdbot.run_bot(BOT_TOKEN, GD_USER, GD_PASSWORD, LOOP))
+LOOP.create_task(gd.bot.run_bot(BOT_TOKEN, GD_USER, GD_PASSWORD, LOOP))
 
 # attach site running task
 LOOP.create_task(nekit_site.run_async())
