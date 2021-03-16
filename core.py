@@ -3,7 +3,7 @@ import os
 import gd
 import nekitdev
 
-HOST = os.getenv("HOST", "localhost")
+HOST = os.getenv("HOST", "0.0.0.0")
 PORT = os.getenv("PORT", 80)
 
 app = gd.server.create_app()
