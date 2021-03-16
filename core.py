@@ -1,28 +1,19 @@
 import os
 
 import gd
-import gd.bot
-import nekit_site
+import nekitdev
 
-# get credentials
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-GD_USER = os.getenv("GD_USER")
-GD_PASSWORD = os.getenv("GD_PASSWORD")
+HOST = os.getenv("HOST", "localhost")
+PORT = os.getenv("PORT", 80)
 
-# create a loop
-LOOP = gd.utils.acquire_loop()
+app = gd.server.create_app()
 
-# load the factory
-gd.factory.load()
+gd.server.setup_gd_app_sync(app)
 
-# attach bot running task
-LOOP.create_task(gd.bot.run_bot(BOT_TOKEN, GD_USER, GD_PASSWORD, LOOP))
-
-# attach site running task
-LOOP.create_task(nekit_site.run_async())
+nekitdev.setup_app(app)
 
 try:
-    LOOP.run_forever()
+    gd.server.run_app_sync(app, host=HOST, port=PORT)
 
-finally:
-    gd.utils.shutdown_loop(LOOP)
+except Exception:
+    pass
